@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_card"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Title"
+            android:background="@null"
+            android:id="@+id/dialog_editText_title"
+            android:gravity="left"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="20dp"
+            android:background="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Type Content"
+            android:id="@+id/dialog_editText_content"
+            android:layout_gravity="left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/dialog_button_insert"
+                android:text="Insert"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/dialog_button_cancel"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
